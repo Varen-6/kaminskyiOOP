@@ -1,5 +1,5 @@
-from Lab6 import *
-from Dlist import DoubleList
+from Lab6.Lab6 import *
+from Lab7.Dlist import DoubleList
 
 helm = ArmorPiece(100, 5, "Сlose helmet of the Maximillian type")
 bplate = ArmorPiece(600, 34, "Metal Carved Breastplate")
