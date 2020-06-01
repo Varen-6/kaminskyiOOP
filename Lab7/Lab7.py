@@ -1,0 +1,28 @@
+from Lab6 import *
+from Dlist import DoubleList
+
+helm = ArmorPiece(100, 5, "Сlose helmet of the Maximillian type")
+bplate = ArmorPiece(600, 34, "Metal Carved Breastplate")
+boots = ArmorPiece(150, 8, "Metal Boots")
+gloves = ArmorPiece(200, 3, "Metal plated gloves")
+asword = Weapon(300, 6, "Arming sword")
+tshield = Shield(240, 15, "Tower Shield")
+lsword = Weapon(560, 14, "Longsword")
+buckler = Shield(130, 3, "Buckler")
+aketon = ArmorPiece(80, 4, "Aketon")
+
+Mace = DoubleList()
+print(Mace.isEmpty())
+Anakin = DoubleList()
+Anakin.add(Ammunition(1200, 80))
+Obi = DoubleList()
+Obi.addAll(helm, gloves, asword, buckler, boots, aketon)
+Obi.list_sort(Obi, "weight")
+Obi.show(1)
+Obi.remove(helm)
+Obi.show(1)
+Obi.removeAll(gloves, asword)
+Obi.show(1)
+print(Obi.size)
+print(Obi.contains(buckler))
+print(Obi.containsAll(buckler, boots, helm))
